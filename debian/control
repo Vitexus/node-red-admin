@@ -1,0 +1,17 @@
+Source: node-red-admin
+Section: javascript
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), nodejs (>= 20), npm
+Standards-Version: 4.6.2
+Homepage: https://github.com/node-red/node-red-admin
+Vcs-Git: https://github.com/Vitexus/node-red-admin.git
+Vcs-Browser: https://github.com/Vitexus/node-red-admin
+
+Package: node-red-admin
+Architecture: all
+Depends: ${misc:Depends}, nodejs (>= 20)
+Description: The Node-RED admin command line interface
+ Provides the node-red-admin command line tool for managing a
+ remote Node-RED instance, including hash-pw for generating password
+ hashes for the admin API.
