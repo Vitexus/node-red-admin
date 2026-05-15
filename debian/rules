@@ -16,6 +16,10 @@ override_dh_auto_install:
 	printf '#!/bin/sh\nexec /usr/bin/node /usr/share/nodejs/node-red-admin/node-red-admin.js "$$@"\n' \
 		> debian/node-red-admin/usr/bin/node-red-admin
 	chmod 755 debian/node-red-admin/usr/bin/node-red-admin
+	# AppStream metadata
+	install -d debian/node-red-admin/usr/share/metainfo
+	install -m 644 debian/io.github.vitexus.node_red_admin.metainfo.xml \
+		debian/node-red-admin/usr/share/metainfo/
 
 override_dh_shlibdeps:
 

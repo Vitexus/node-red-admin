@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="console-application">
+  <id>io.github.vitexus.node_red_admin</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <name>node-red-admin</name>
+  <summary>The Node-RED admin command line interface</summary>
+  <description>
+    <p>
+      Provides the node-red-admin command line tool for managing a remote
+      Node-RED instance. Includes hash-pw for generating bcrypt password
+      hashes suitable for use in the Node-RED admin API configuration.
+    </p>
+  </description>
+  <categories>
+    <category>Development</category>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">https://github.com/node-red/node-red-admin</url>
+  <url type="bugtracker">https://github.com/node-red/node-red-admin/issues</url>
+  <url type="vcs-browser">https://github.com/Vitexus/node-red-admin</url>
+  <developer id="io.github.vitexus">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="4.1.6" date="2024-01-01"/>
+  </releases>
+</component>
